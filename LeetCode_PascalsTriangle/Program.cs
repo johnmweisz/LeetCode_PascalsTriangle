@@ -11,7 +11,7 @@ namespace LeetCode_PascalsTriangle
         static void Main(string[] args)
         {
             var solution = new Solution();
-            var answer = solution.Generate(4);
+            var answer = solution.Generate(1);
             foreach (var row in answer)
             {
                 foreach (var i in row)
@@ -31,7 +31,6 @@ namespace LeetCode_PascalsTriangle
             if (numRows < 1) return result;
 
             result[0] = new int[1] { 1 };
-            if (numRows < 2) return result;
 
             for (var i = 1; i < numRows; i++)
             {
